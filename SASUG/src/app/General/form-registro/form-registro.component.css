@@ -1,0 +1,12 @@
+small{
+    color:var(--azul75UG);}
+
+.btn-guardar{
+        background-color:var(--amarilloUG) !important;
+        color:var(--amarillo25UG);
+        margin: 5px;
+    }
+.btn-guardar:hover{
+    color:var(--amarillo25UG);
+    background-color:var(--amarillo75UG) !important;
+}

@@ -1,0 +1,24 @@
+/* You can add global styles to this file, and also import other style files */
+:root{
+    --azulUG:#00335B;
+    --azul75UG:#456A87;
+    --azul50UG:#8BA2B4;
+    --azul25UG:#E9EEF1;
+
+    --doradoUG:#ADA07A;
+    --dorado75UG:#C3B99E;
+    --dorado50UG:#D9D3C2;
+    --dorado25UG:#F0EDE6;
+
+    --amarilloUG:#F2E27F; 
+    --amarillo75UG:#F5E9A1; 
+    --amarillo50UG:#F9F1C4; 
+    --amarillo25UG:#FCF9E7; 
+
+}
+
+.TituloUG
+{
+    font-family: 'Novecento Wide Normal';
+}
+

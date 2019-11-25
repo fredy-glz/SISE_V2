@@ -1,0 +1,32 @@
+export interface Usuario {
+    NUA: number;
+    PrimerCont?: boolean;
+    Reinicio?: boolean;
+    Nombres: string;
+    APaterno: string;
+    AMaterno: string;
+    Sexo: string;
+    Edad: number;
+    EstadoCivil: string;
+    Telefono: string;
+    FechaNacimiento: string;
+    Estado: string;
+    Municipio: string;
+    CalleR: string;
+    ColoniaR: string;
+    NumeroR: string;
+    CalleO: string;
+    ColoniaO: string;
+    NumeroO: string;
+    ServicioSalud: string;
+    NSS: string;
+    FechaIngreso: string;
+    Periodo: string;
+    Campus: string;
+    Division_Id: number;
+    PE_Id: number;
+    Informacion: string;
+    Correo: string;
+    Contrasena: string;
+    Observaciones: string;
+}

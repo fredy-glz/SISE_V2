@@ -1,0 +1,292 @@
+<form class="needs-validation" novalidate>
+    <div class="form-row">
+        <div class="form-group col-md-6">              
+          <input name="NUA" class="form-control " id="NUA"  type="number" placeholder="NÚA" required>
+      </div>
+      <div class="col-md-6">
+
+        <label class="radio-inline col col-6">
+                      <input type="radio" name="optradio">Primer contacto</label>
+                      <label class="form-group radio-inline col col-6">
+                      <input type="radio" name="optradio">Reinicio</label>
+      </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <input name="Nombres" class="form-control" id="Nombres" required type="text" maxlength="45" placeholder="Nombre">
+          </div>
+          <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <input name="Paterno" class="form-control" id="Paterno" required type="text" maxlength="45" placeholder="Apellido Paterno">
+          </div>
+          <div class="form-group col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <input name="Materno" class="form-control" id="Materno" required type="text" maxlength="45" placeholder="Apellido Materno">
+          </div>
+      </div>
+      <div class="form-row">
+          <div class="form-group col-12 col-md-4 ">
+                  <select name="Sexo" class="form-control" id="Sexo" required="">
+                      <option value="" disabled="disabled">Sexo</option>
+                      <option value="M">Masculino</option>
+                      <option value="F">Femenino</option>
+                  </select>
+          </div>
+          <div class="form-group col-12 col-md-4">
+                      <input name="Edad" class="form-control" id="Edad" required type="number" placeholder="Edad">
+          </div>
+          <div class="form-group col-12 col-md-4">
+                  <select name="Sexo" class="form-control" id="Sexo" required="">
+                          <option value="" disabled="disabled">Estado Civil</option>
+                          <option value="S">Soltero</option>
+                          <option value="C">Casado</option>
+                          <option value="O">Otro</option>
+                  </select>
+                 
+          </div>
+          
+      </div>
+      <div class="form-row">
+        <div class=" form-group col-12 col-md-6">
+                <input name="Telefono" class="form-control no-spin" id="Telefono" required type="number" maxlength="10" placeholder="Teléfono o celular">
+        </div>
+    </div>
+      <div class="form-row pt-3">
+          <div class="form-group col text-uppercase text-center">
+                  <small>Datos de nacimiento</small>
+          </div>
+  </div>
+
+  <div class="form-row">
+      <div class=" form-group col-12 col-md-4">
+                  <label><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>&nbsp;Fecha:</label>
+                  <input type="text"
+                  placeholder="Fecha de nacimiento "
+                  class="form-control"
+                  bsDatepicker  >     
+                   </div>
+
+        <div class=" form-group col-12 col-md-4">
+                <label><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>&nbsp;Estado:</label>
+             
+                <select name="Estado"  ng-model="estSelect" class="form-control" id="Estado" required="">
+                <option *ngFor="let estado of estados"  estadoActivo=estado.id [value]="estado.id">{{estado.name}} </option>
+            </select>
+        </div>
+    
+        <div class=" form-group col-12 col-md-4">
+                  <label><span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>&nbsp;Municipio:</label>
+                  <select name="Municipio" class="form-control" id="Municipio" required="">
+                        <option disabled="disabled">ciudad</option>
+                        <option value=2>Estado 1</option>
+                        <option *ngIf="1===1" value=3>Estado 2</option>
+                  </select>
+          </div>
+          </div>
+          <div class="form-row pt-3">
+              <div class="form-group col text-uppercase text-center">
+                      <small>Domicilio de residencia</small>
+              </div>
+          </div>
+          <div class="form-row">
+          <div class=" form-group col-12 col-md-4">
+                      <input name="Calle" class="form-control" id="Calle" required="" type="text" maxlength="50" placeholder="Calle">
+          </div>
+
+          <div class=" form-group col-12 col-md-4">
+                      <input name="Colonia" class="form-control" id="Colonia" required="" type="text" placeholder="Colonia">
+          </div>
+          <div class=" form-group col-12 col-md-4">
+                      <input name="Numero" class="form-control" id="Numero" required="" type="number" placeholder="Número">
+          </div>
+          </div>
+          <div class="form-row pt-3">
+                  <div class="form-group col text-uppercase text-center">
+                          <small>Domicilio de origen</small>
+                  </div>
+              </div>
+              <div class="form-row">
+              <div class=" form-group col-12 col-md-4">
+                          <input  name="Calle" class="form-control" id="Calle"  type="text" maxlength="50" placeholder="Calle">
+              </div>
+  
+              <div class=" form-group col-12 col-md-4">
+                          <input name="Colonia" class="form-control" id="Colonia"  type="text" placeholder="Colonia">
+              </div>
+              <div class=" form-group col-12 col-md-4">
+                          <input name="Numero" class="form-control" id="Numero"  type="number" placeholder="Número">
+              </div>
+              </div>
+          <div class="form-row pt-3">
+                  <div class="form-group col text-uppercase text-center">
+                          <small>Datos Medicos</small>
+                  </div>
+              </div>
+              <div class="form-row">
+                      <div class=" form-group col-6">
+                              <select name="Periodo" class="form-control" id="Periodo" required="">
+                                  <option value="" disabled="disabled">Selecciona tu servicio de salud</option>
+                                      <option value="1">IMSS</option>
+                                      <option value="2">Seguro Popular </option>
+                                      <option value="3">Otro</option>
+
+                              </select>
+                      </div>
+                      <div class="form-group col col-md-6" required="">
+                              <input type="number"
+                              placeholder="NSS"
+                              class="form-control"
+                               >
+                      </div>
+                  </div>
+          <div class="form-row pt-3">
+              <div class="form-group col text-uppercase text-center">
+                      <small>Datos Academicos</small>
+              </div>
+          </div>
+          <div class="form-row">
+                  <div class="form-group col col-md-6" required="">
+                          <input type="text"
+                          placeholder="Fecha de ingreso "
+                          class="form-control"
+                          bsDatepicker >
+                  </div>
+                  <div class=" form-group col-6">
+                          <select name="Periodo" class="form-control" id="Periodo" required="">
+                              <option value="" disabled="disabled">Selecciona un periodo</option>
+                                  <option value="1">Enero-Julio</option>
+                                  <option value="2">Agosto-Diciembre </option>
+                          </select>
+                  </div>
+              </div>
+
+          
+          
+          <div class="form-row">                   
+              <div class=" form-group col-12 col-md-4">
+                      <select name="Campus" class="form-control" id="Campus" required="">
+                          <option value="" disabled="disabled">Selecciona un Campus</option>
+                              <option value="1">Campus Guanajuato</option>
+                              <option value="2">Campus León</option>
+                              <option value="3">Campus Irapuato - Salamanca</option>
+                              <option value="4">Campus Celaya - Salvatierra</option>
+                      </select>
+                  </div>
+
+                  <div class=" form-group col-12 col-md-4">
+                      <select name="Division" class="form-control" id="Division" required="">
+                          <option value="" disabled="disabled">Selecciona una División</option>
+                      </select>
+                  </div>
+
+                  <div class=" form-group col-12 col-md-4">
+                      <select name="Departamento" class="form-control" id="Departamento" required="">
+                          <option value="" disabled="disabled">Selecciona un programa educativo</option>
+                      </select>
+                  </div>
+
+              </div>
+          <div class="form-row">
+                      <div class=" form-group col-12 col-md-6">
+                      <select name="ComoEntero" class="form-control" id="ComoEntero" required="">
+                              <option value="" disabled="disabled">¿Cómo se enteró de este servicio?</option>
+                                  <option value="1">Amigos</option>
+                                  <option value="2">Profesores</option>
+                                  <option value="3">Enfermeras</option>
+                                  <option value="4">Impresos</option>
+                                  <option value="5">Otros</option>
+
+                      </select>
+                  </div>
+          </div> 
+          <div class="form-row pt-3">
+          <div class="form-group col text-uppercase text-center">
+              <small>Contacto de Emergencia</small>
+          </div>
+
+          </div>
+          <div class="form-row">
+              <div class=" form-group col-12">
+                      <div class="alert alert-info" role="alert">
+                              <span class="glyphicon glyphicon-info-sign"></span> Es necesario que proporcione los datos de una persona a la cuál contactar en caso de emergencia
+                      </div>
+              </div>    
+
+          </div>
+          <div class="form-row">
+              <div class=" form-group col-12 col-md-4">
+                      <input name="NombresContacto" class="form-control" id="NombresContacto" required="" type="text" maxlength="45" placeholder="Nombre de Contacto">
+                  </div>
+                  <div class=" form-group col-12 col-md-4">
+                      <input name="PaternoContacto" class="form-control" id="PaternoContacto" required="" type="text" maxlength="45" placeholder="Apellido Paterno de Contacto">
+                  </div>
+                  <div class=" form-group col-12 col-md-4">
+                          <input name="MaternoContacto" class="form-control" id="MaternoContacto" required="" type="text" maxlength="45" placeholder="Apellido Materno de Contacto">
+                  </div>
+              </div>                                
+              <div class="form-row">
+                      <div class=" form-group col-12 col-md-4">
+                      <input name="TelefonoContacto" class="form-control no-spin" id="TelefonoContacto" required type="text" maxlength="10" placeholder="Teléfono de Contacto">
+                  </div>
+
+                  <div class=" form-group col-12 col-md-4">
+                      <input name="CalleContacto" class="form-control" id="CalleContacto" required="" type="text" maxlength="50" placeholder="Calle de Contacto">
+                  </div>
+
+                  <div class=" form-group col-12 col-md-4">
+                      <input name="ColoniaContacto" class="form-control" id="ColoniaContacto" required="" type="text" placeholder="Colonia de Contacto">
+                  </div>
+              </div>
+              <div class="form-row">
+              <div class=" form-group col-12 col-md-6">
+                      <input name="NumeroContacto" class="form-control" id="NumeroContacto" required="" type="number" placeholder="Número de Contacto">
+              </div>
+              </div>
+          
+              <div class="form-row pt-3">
+                      <div class="form-group col text-uppercase text-center">
+                              <small>Datos de incio de sesión</small>
+                      </div>
+              </div>
+          <div class="form-row">
+              <div class=" form-group col-12 col-md-8">
+                          <input name="Correo" class="form-control" id="Correo" required="" type="email" placeholder="Correo Electrónico">
+              </div>
+              <div class=" form-group col-12 col-md-8">
+                          <input name="Contraseña" class="form-control" id="Contraseña" required="" type="password" placeholder="Contraseña">
+              </div>
+              <div class=" form-group col-12 col-md-8">
+                          <input name="ConfirmarContraseña" class="form-control" id="ConfirmarContraseña" required="" type="password" placeholder="Confirmar Contraseña">
+              </div>
+          </div>   
+          <div class="form-group shadow-textarea">
+                  <label for="">Observaciones</label>
+                  <textarea class="form-control z-depth-1"  rows="3" placeholder="Escribe algo aquí..."></textarea>
+          </div>                                                     
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-right">
+              <button class="btn btn-guardar btn-block" type="submit">Registrar</button>
+          </div>                                                        
+
+      </form>     
+
+
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+    form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+    }, false);
+    });
+    }, false);
+    })();
+    </script> 
+
+

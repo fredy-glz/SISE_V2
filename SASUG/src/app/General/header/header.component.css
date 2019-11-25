@@ -1,0 +1,30 @@
+.navHome
+{
+    height: 150px;
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: right;
+}
+nav.navbar{
+    background-color:var(--azulUG) !important;
+}
+
+.navbar .navbar-brand{
+    color:var(--azul25UG);
+
+}
+.navbar .navbar-brand:hover{
+    color:var(--azul50UG);
+
+}
+
+.navbar .navbar-nav{
+    margin: 0 auto;
+}
+.navbar .navbar-nav .nav-item a{
+    color:var(--azul25UG);
+}
+.navbar .navbar-nav .nav-item a:hover{
+    color:var(--azul50UG);
+}
+
