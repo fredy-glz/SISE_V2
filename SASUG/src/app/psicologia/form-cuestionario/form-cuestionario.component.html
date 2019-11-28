@@ -1,0 +1,2515 @@
+<form class="needs-validation" novalidate>   
+    <div class="form-row">
+        <form>
+            <p align="left">
+            A continuación se te presenta una lista de problemas y quejas que algunas veces tiene la gente. Lea con cuidao cada una de ellas y seleccione las opciones correspondientes, elija la que describa mejor cómo se ha sentido y en qué medida ese problema le ha preocupado o molestado durante los últimos 7 días, incluyendo el día de hoy.</p>
+            <p>Las 5 opciones de respuesta se muestran a continuación:</p>
+            <p align="center"> <b>0-NADA &nbsp; 1-MUY POCO &nbsp; 2-MODERADAMENTE&nbsp;  3-BASTANTE&nbsp; 4-MUCHISIMO </b></p>
+          
+            <div class = "container">
+              <div class="form-group">
+                <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+                  <div class="btn-group mr-2" role="group" aria-label="First group">
+                    <button type="button" class="btn btn-secondary" (click)="form_radion(1)">1</button>
+                    <button type="button" class="btn btn-secondary" (click)="form_radion(2)">2</button>
+                    <button type="button" class="btn btn-secondary" (click)="form_radion(3)">3</button>
+                    <button type="button" class="btn btn-secondary" (click)="form_radion(4)">4</button>
+                    <button type="button" class="btn btn-secondary" (click)="form_radion(5)">5</button>
+                    <button type="button" class="btn btn-secondary" (click)="form_radion(6)">6</button>
+                    <button type="button" class="btn btn-secondary" (click)="form_radion(7)">7</button>
+                    <button type="button" class="btn btn-secondary" (click)="form_radion(8)">8</button>
+                    <button type="button" class="btn btn-secondary" (click)="form_radion(9)">9</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+                <ng-container *ngIf="x == 1">
+                    <label style="font-weight: bold">1.Dolor de cabeza:</label> &nbsp;
+                    <div class="form-group">
+                      <label class="radio-inline" > 
+                        <input type="radio"  name="rbt" value="nunca"> Nada
+                      </label>
+                    
+                      <label class="radio-inline">
+                        <input type="radio"  name="rbt" value="poco"  > Muy poco
+                      </label>
+              
+                      <label class="radio-inline">
+                        <input type="radio"  name="rbt" value="moderado"  > Moderadamente
+                      </label>
+                
+                      <label class="radio-inline">
+                        <input type="radio"  name="rbt" value="bastante"  > Bastante
+                      </label>
+                    
+                      <label class="radio-inline">
+                        <input type="radio"  name="rbt" value="muchisismo"  > Muchisimo
+                      </label>
+                      &nbsp;
+                  </div>
+                  <div class="form-group">
+                      <label style="font-weight: bold">2.Nerviosismo o agitacion interior:</label> &nbsp;
+                  
+                      <div class="form-group">
+                        <label class="radio-inline" > 
+                          <input type="radio"  name="rbt1" value="nunca"> 
+                          Nada
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt1" value="poco"  > Muy poco
+                        </label>
+                
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt1" value="moderado"  > Moderadamente
+                        </label>
+                  
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt1" value="bastante"  > Bastante
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt1" value="muchisismo"  > Muchisimo
+                        </label>&nbsp;
+                    </div>
+                  </div>
+                
+                  <div class="form-group">
+                      <label style="font-weight: bold">3.Pensamientos desagradables repetidos que no pueden quitarse de la cabeza:</label> &nbsp;
+                  
+                      <div class="form-group">
+                        <label class="radio-inline" > 
+                          <input type="radio"  name="rbt2" value="nunca"> 
+                          Nada
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt2" value="poco"  > Muy poco
+                        </label>
+                
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt2" value="moderado"  > Moderadamente
+                        </label>
+                  
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt2" value="bastante"  > Bastante
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt2" value="muchisismo"  > Muchisimo
+                        </label>&nbsp;
+                    </div>
+                  </div>
+                
+                  <div class="form-group">
+                      <label style="font-weight: bold">4.Desmayos o mareos:</label> &nbsp;
+                  
+                      <div class="form-group">
+                        <label class="radio-inline" > 
+                          <input type="radio"  name="rbt3" value="nunca"> 
+                          Nada
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt3" value="poco"  > Muy poco
+                        </label>
+                
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt3" value="moderado"  > Moderadamente
+                        </label>
+                  
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt3" value="bastante"  > Bastante
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt3" value="muchisismo"  > Muchisimo
+                        </label> &nbsp;
+                    </div>
+                  </div>
+                
+                  <div class="form-group">
+                      <label style="font-weight: bold">5. Pérdida de interés o de placer sexual:</label> &nbsp;
+                  
+                      <div class="form-group">
+                        <label class="radio-inline" > 
+                          <input type="radio"  name="rbt4" value="nunca"> 
+                          Nada
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt4" value="poco"  > Muy poco
+                        </label>
+                
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt4" value="moderado"  > Moderadamente
+                        </label>
+                  
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt4" value="bastante"  > Bastante
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt4" value="muchisismo"  > Muchisimo
+                        </label> &nbsp;
+                    </div>
+                  </div>
+                
+                  <div class="form-group">
+                      <label style="font-weight: bold">6. Sentirse crítico/a hacia los demás:</label> &nbsp;
+                  
+                      <div class="form-group">
+                        <label class="radio-inline" > 
+                          <input type="radio"  name="rbt5" value="nunca"> 
+                          Nada
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt5" value="poco"  > Muy poco
+                        </label>
+                
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt5" value="moderado"  > Moderadamente
+                        </label>
+                  
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt5" value="bastante"  > Bastante
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt5" value="muchisismo"  > Muchisimo
+                        </label> &nbsp;
+                    </div>
+                  </div>
+                
+                  <div class="form-group">
+                      <label style="font-weight: bold">7.La idea de que alguien pueda controlar sus pensamientos.:</label> &nbsp;
+                  
+                      <div class="form-group">
+                        <label class="radio-inline" > 
+                          <input type="radio"  name="rbt6" value="nunca"> 
+                          Nada
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt6" value="poco"  > Muy poco
+                        </label>
+                
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt6" value="moderado"  > Moderadamente
+                        </label>
+                  
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt6" value="bastante"  > Bastante
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt6" value="muchisismo"  > Muchisimo
+                        </label> &nbsp;
+                    </div>
+                  </div>
+                
+                  <div class="form-group">
+                      <label style="font-weight: bold">8. Creer que los demás son culpables de muchos de sus problemas:</label> &nbsp;
+                  
+                      <div class="form-group">
+                        <label class="radio-inline" > 
+                          <input type="radio"  name="rbt7" value="nunca"> 
+                          Nada
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt7" value="poco"  > Muy poco
+                        </label>
+                
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt7" value="moderado"  > Moderadamente
+                        </label>
+                  
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt7" value="bastante"  > Bastante
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt7" value="muchisismo"  > Muchisimo
+                        </label> &nbsp;
+                    </div>
+                  </div>
+                
+                  <div class="form-group">
+                      <label style="font-weight: bold">9. Dificultad para recordar cosas:</label> &nbsp;
+                  
+                      <div class="form-group">
+                        <label class="radio-inline" > 
+                          <input type="radio"  name="rbt8" value="nunca"> 
+                          Nada
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt8" value="poco"  > Muy poco
+                        </label>
+                
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt8" value="moderado"  > Moderadamente
+                        </label>
+                  
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt8" value="bastante"  > Bastante
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt8" value="muchisismo"  > Muchisimo
+                        </label> &nbsp;
+                    </div>
+                  </div>
+                
+                  <div class="form-group">
+                      <label style="font-weight: bold">10. Preocupación por el orden y la dejadez:</label> &nbsp;
+                  
+                      <div class="form-group">
+                        <label class="radio-inline" > 
+                          <input type="radio"  name="rbt9" value="nunca"> 
+                          Nada
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt9" value="poco"  > Muy poco
+                        </label>
+                
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt9" value="moderado"  > Moderadamente
+                        </label>
+                  
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt9" value="bastante"  > Bastante
+                        </label>
+                      
+                        <label class="radio-inline">
+                          <input type="radio"  name="rbt9" value="muchisismo"  > Muchisimo
+                        </label> &nbsp;
+                    </div>
+                  </div>
+                </ng-container>
+            </div>
+            <div class="form-group">
+                <ng-container *ngIf="x == 2">
+                    <div class="form-group">
+                        <label style="font-weight: bold">11. Sentirse fácilmente enfadado/a o irritado/a:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt10" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt10" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt10" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt10" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt10" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">12.Dolores en el pecho o en el corazón:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt11" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt11" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt11" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt11" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt11" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">13. Sentir miedo en los espacios abiertos o en la calle:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt12" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt12" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt12" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt12" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt12" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">14. Sentirse con pocas energías o decaído\a:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt13" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt13" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt13" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt13" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt13" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">15. Pensamiento de poner fin a su vida:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt14" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt14" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt14" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt14" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt14" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">16. Oír voces que otra gente no oye:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt15" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt15" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt15" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt15" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt15" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">17.Temblores:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt16" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt16" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt16" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt16" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt16" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">18. Creer que no se puede confiar en la mayor parte de la gente:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt17" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt17" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt17" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt17" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt17" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">19. Poco apetito:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt18" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt18" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt18" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt18" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt18" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">20. Llorar con facilidad:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt19" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt19" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt19" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt19" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt19" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                </ng-container>
+            </div>
+            <div class="form-group">
+                <ng-container *ngIf="x == 3">
+                    <div class="form-group">
+                        <label style="font-weight: bold">21. Sentirse tímido/a con el sexo opuesto:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt20" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt20" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt20" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt20" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt20" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">22. Sentimientos de estar atrapado\a:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt21" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt21" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt21" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt21" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt21" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">23. Asustarse súbitamente sin razón:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt22" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt22" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt22" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt22" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt22" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">24. Explosiones de mal genio que no pueden controlar: </label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt23" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt23" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt23" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt23" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt23" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">25. Sentir miedo de salir solo/a de su casa:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt24" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt24" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt24" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt24" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt24" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">26. Culparse a sí mismo/a de cosas:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt25" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt25" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt25" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt25" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt25" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">27. Dolores en la parte baja de la espalda:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt26" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt26" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt26" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt26" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt26" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">28. Sentirse bloqueado/a para hacer cosas :</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt27" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt27" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt27" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt27" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt27" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">29. Sentirse solo/a:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt28" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt28" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt28" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt28" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt28" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">30. Sentirse triste:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt29" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt29" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt29" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt29" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt29" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                </ng-container>
+            </div>    
+            <div class="form-group">
+                <ng-container *ngIf="x == 4">
+                    <div class="form-group">
+                        <label style="font-weight: bold">31. Preocuparse demasiado o dar vueltas continuamente sobre las cosas:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt30" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt30" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt30" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt30" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt30" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">32. Desinterés por las cosas:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt31" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt31" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt31" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt31" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt31" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">Sentirse temeroso/a:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt32" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt32" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt32" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt32" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt32" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">34. El hecho de que sus sentimientos son heridos fácilmente:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt33" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt33" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt33" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt33" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt33" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">35. Pensar en que otras personas conocen sus sentimientos íntimos:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt34" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt34" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt34" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt34" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt34" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">36. Sentir que los demás no lo entienden o son poco comprensivos con usted:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt35" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt35" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt35" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt35" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt35" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">37. Encontrar que la gente es poco amistosa o que usted les desagrada:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt36" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt36" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt36" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt36" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt36" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">38. Tener que hacer las cosas muy despacio para estar seguro/a de que están bien hechas:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt37" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt37" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt37" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt37" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt37" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">39. Palpitaciones o aceleración del ritmo cardiaco:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt38" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt38" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt38" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt38" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt38" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">40. Náuseas o transtornos estomacales:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt39" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt39" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt39" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt39" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt39" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                </ng-container>
+            </div>
+            <div class="form-group">
+                <ng-container *ngIf="x == 5">
+                    <div class="form-group">
+                        <label style="font-weight: bold">41. Sentirse inferior a los demás:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt40" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt40" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt40" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt40" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt40" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">42. Dolores musculares:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt41" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt41" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt41" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt41" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt41" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">43. Sentir que está siendo observado/a o que hablan de usted:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt42" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt42" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt42" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt42" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt42" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">44. Dificultad para conciliar el sueño:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt43" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt43" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt43" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt43" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt43" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">45. Tener que comprobar lo que hace:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt44" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt44" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt44" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt44" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt44" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">46. Dificultad para tomar decisiones:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt45" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt45" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt45" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt45" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt45" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">47. Sentir miedo de viajar en autobús, metro o tren:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt46" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt46" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt46" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt46" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt46" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">48. Dificultad para respirar:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt47" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt47" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt47" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt47" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt47" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">49. Rachas o momentos de frío o calor:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt48" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt48" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt48" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt48" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt48" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">50. Tener que evitar ciertas cosas, lugares o actividades porque le asustan:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt49" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt49" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt49" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt49" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt49" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                </ng-container>
+            </div>
+            <div class="form-group">
+                <ng-container *ngIf="x == 6">
+                    <div class="form-group">
+                        <label style="font-weight: bold">51. Quedarse con la mente en blanco:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt50" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt50" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt50" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt50" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt50" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">52. Sensaciones de adormecimiento o sensaciones de hormigueo eb algunas partes de su cuerpo:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt51" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt51" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt51" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt51" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt51" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">53. Sentir un nudo en la garganta:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt52" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt52" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt52" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt52" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt52" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">54. Sentirse desesperado/a sobre el futuro:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt53" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt53" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt53" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt53" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt53" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">55. Dificualtad para concentrarse:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt54" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt54" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt54" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt54" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt54" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">56. Debilidad en algunas aprtes del cuerpo:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt55" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt55" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt55" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt55" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt55" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">57. Sentirse tenso/a o con los nervios de punta:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt56" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt56" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt56" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt56" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt56" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">58. Sensación de pesadez en brazos o piernas:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt57" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt57" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt57" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt57" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt57" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">59. Pensamientos sobre la muerte o morirse:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt58" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt58" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt58" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt58" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt58" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">60. Comer en exceso:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt59" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt59" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt59" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt59" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt59" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                </ng-container>
+            </div>
+            <div class="form-group">
+                <ng-container *ngIf="x == 7">
+                    <div class="form-group">
+                        <label style="font-weight: bold">61. Sentirse incómodo/a cuando la gente le mira o habla de usted:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt60" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt60" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt60" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt60" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt60" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">62. Tener pensamientos que no son suyos:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt61" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt61" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt61" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt61" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt61" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">63. Tener fuertes deseos de pegar, herir o dañar a alguien:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt62" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt62" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt62" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt62" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt62" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">64. Despertarse muy temprano por la mañana: </label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt63" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt63" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt63" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt63" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt63" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">65. Tener que repetir las mismas acciones, por ejemplo, tocar, contar, lavarse:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt64" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt64" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt64" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt64" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt64" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">66. Dormir de manera inquieta o desvelarse fácilmente:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt65" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt65" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt65" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt65" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt65" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">67. Tener fuertes deseos de romper o destrozar cosas: </label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt66" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt66" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt66" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt66" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt66" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">68. Tener pensamientos o creencias que otros no comparten:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt67" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt67" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt67" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt67" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt67" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">69. Sentirse muy tímido con los demás:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt68" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt68" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt68" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt68" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt68" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">70. Sentirse incómodo/a cuando hay mucha gente, como por ejemplo en las tiendas o el cine:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt69" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt69" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt69" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt69" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt69" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                </ng-container>
+            </div>
+            <div class="form-group">
+                <ng-container *ngIf="x == 8">
+                    <div class="form-group">
+                        <label style="font-weight: bold">71. Sentir que todo le representa un esfuerzo:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt70" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt70" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt70" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt70" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt70" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">72. Momentos de terror o pánico:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt71" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt71" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt71" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt71" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt71" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">73. Sentirse incómodo/a al comer o beber en público:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt72" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt72" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt72" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt72" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt72" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">74. Involucrarse frecuentemente en discusiones:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt73" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt73" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt73" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt73" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt73" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">75. Sentirse nervioso/a cuando le dejan solo/a:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt74" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt74" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt74" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt74" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt74" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">76. Pensar que los demás no valoran sus logros:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt75" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt75" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt75" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt75" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt75" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <label style="font-weight: bold">77. Sentirse solo/a incluso cuando esta con gente:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt76" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt76" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt76" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt76" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt76" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">78. Sentirse tan intranquilo/a que no puede estarse quieto:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt77" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt77" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt77" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt77" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt77" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">79. Sentimiento de inutilidad:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt78" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt78" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt78" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt78" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt78" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">80. La sensación de que algo le va a ocurrir:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt79" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt79" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt79" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt79" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt79" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                </ng-container>
+            </div>
+            <div class="form-group">
+                <ng-container *ngIf="x == 9">
+                    <div class="form-group">
+                        <label style="font-weight: bold">81. Gritar o tirar cosas:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt80" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt80" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt80" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt80" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt80" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">82. Sentir miedo o desmayarse en público:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt81" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt81" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt81" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt81" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt81" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">83. Pensar que la gente se aprovechará de usted si les deja:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt82" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt82" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt82" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt82" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt82" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">84. Tener pensamientos sexuales que le preocupan mucho:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt83" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt83" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt83" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt83" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt83" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">85. La idea que debería ser castigado/a por sus pecados:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt84" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt84" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt84" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt84" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt84" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">86. Pensamientos e imágenes de naturaleza amenazadora:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt85" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt85" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt85" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt85" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt85" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">87. La idea que algo grave pasa en mi cuerpo:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt86" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt86" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt86" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt86" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt86" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">88. No sentirse nunca cernano/a comprenetrado/a con otra persona:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt87" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt87" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt87" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt87" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt87" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">89. Sentimientos de culpa:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt88" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt88" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt88" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt88" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt88" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                  
+                    <div class="form-group">
+                        <label style="font-weight: bold">90. La idea de que algo funciona mal en su mente:</label> &nbsp;
+                    
+                        <div class="form-group">
+                          <label class="radio-inline" > 
+                            <input type="radio"  name="rbt89" value="nunca"> 
+                            Nada
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt89" value="poco"  > Muy poco
+                          </label>
+                  
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt89" value="moderado"  > Moderadamente
+                          </label>
+                    
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt89" value="bastante"  > Bastante
+                          </label>
+                        
+                          <label class="radio-inline">
+                            <input type="radio"  name="rbt89" value="muchisismo"  > Muchisimo
+                          </label> &nbsp;
+                      </div>
+                    </div>
+                    <div>
+                        <label>CALCULO DE LOS PUNTAJES </label>
+                        <TABLE>
+                          <tr>
+                            Total de sintomas positivos:
+                          </tr>
+                        </TABLE>
+                      </div>
+                </ng-container>
+            </div>
+          </form>
+    </div>                                                      
+</form>     
+<!-- <div class="form-group">
+                <ng-container *ngIf="x == 1">
+                </ng-container>
+            </div> -->
+
+    <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function() {
+    'use strict';
+    window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+    form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+        event.preventDefault();
+        event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+    }, false);
+    });
+    }, false);
+    })();
+    </script> 
+
+

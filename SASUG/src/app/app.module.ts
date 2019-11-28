@@ -13,6 +13,10 @@ import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeNutricionComponent } from './Nutricion/home-nutricion/home-nutricion.component';
 import { HomePsicologiaComponent } from './Psicologia/home-psicologia/home-psicologia.component';
+import { CuestionarioPsicologiaComponent } from './Psicologia/cuestionario-psicologia/cuestionario-psicologia.component';
+import { FormCuestionarioComponent } from './Psicologia/form-cuestionario/form-cuestionario.component';
+import { LoginComponent } from './General/login/login.component';
+import { FormLoginComponent } from './General/form-login/form-login.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +27,11 @@ import { HomePsicologiaComponent } from './Psicologia/home-psicologia/home-psico
     FormRegistroComponent,
     RegistroComponent,
     HomeNutricionComponent,
-    HomePsicologiaComponent
+    HomePsicologiaComponent,
+    CuestionarioPsicologiaComponent,
+    FormCuestionarioComponent,
+    LoginComponent,
+    FormLoginComponent
   ],
   imports: [
     BrowserModule,
