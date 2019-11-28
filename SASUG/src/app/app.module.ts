@@ -12,6 +12,7 @@ import { RegistroComponent } from './General/registro/registro.component';
 import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeNutricionComponent } from './Nutricion/home-nutricion/home-nutricion.component';
+import { HomePsicologiaComponent } from './Psicologia/home-psicologia/home-psicologia.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { HomeNutricionComponent } from './Nutricion/home-nutricion/home-nutricio
     FooterComponent,
     FormRegistroComponent,
     RegistroComponent,
-    HomeNutricionComponent
+    HomeNutricionComponent,
+    HomePsicologiaComponent
   ],
   imports: [
     BrowserModule,
